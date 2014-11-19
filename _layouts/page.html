@@ -12,7 +12,7 @@ layout: default
 
 			<ul class="navbar">
 				<li class="current" id="work">
-					<a href="society.html" title="Work">Work</a>
+					<a href="strand.html" title="Work">Work</a>
 				</li>
 
 				<li id="info">
@@ -23,12 +23,20 @@ layout: default
 
 		<div class="narrowcolumn" id="content">
 			<div id="Marionette">
-				<div style="float:right;position:relative;top: -20px">
+				<div style="float:right;position:relative;top: -20px;">
 					<h2>{{ page.title }}, <span style=
 					"font-size: 0.7em">{{ page.subtitle }}</span></h2>
 					<!--<p>Photographic Installation</p>-->
 
 					<ul class="thumbs" style="width:700px">
+            
+          {% if page.img13 %}  
+						<li>
+							<a href="#" title=""><img alt=
+							"" src=
+							"{{ page.img13 }}"></a>
+						</li>
+          {% endif %}
             
           {% if page.img1 %}  
 						<li>
@@ -119,6 +127,17 @@ layout: default
 
 <div class="slideshow" style="float:right;height:700px;width:700px">
   
+    {% if page.video %}
+				<div class="slide">
+                    <video controls="" width="700">
+                    <source src="{{ page.video }}"
+                    type="video/mp4">Your browser does not support HTML5
+                    video.</video>
+
+                    <h2></h2>
+                </div>
+  {% endif %}
+  
   {% if page.img1 %}
 				<div class="slide">
 					<img alt="" src="{{ page.img1 }}" style="max-height:700px; max-width:700px;display:block;margin:auto">
@@ -188,6 +207,8 @@ layout: default
 					<h3>{{ page.caption10 }}</h3>
 				</div>
   {% endif %}
+
+  
 	
 			</div><!--slideshowwrap-->
 		</div><!-- content -->
