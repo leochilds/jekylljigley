@@ -1,0 +1,426 @@
+/*
+Theme Name: Tyson Benton
+Theme URI: http://www.wrburton.com/
+Description: Bespoke theme for Tys
+Version: 1.0
+Author: William Burton
+Author URI: http://www.wrburton.com/
+*/
+
+
+
+/* Begin Typography & Colors */
+body {
+	/**/background: #7c7c7b url('images/grad.gif') repeat-x;
+	/*background: #FFFFFF url('images/grid.gif') center repeat-y;
+	/*background: url('images/baseline.gif') center repeat-y;*/
+	/**/font-family: Helvetica, Arial, sans-serif;
+	/*font-size: 62.5%;  Resets 1em to 10px */
+	font-size: 13px;
+	line-height: 18px;
+	/*letter-spacing: 0px;*/
+	color: #333;
+	}
+
+.description {
+	position: absolute;
+	left: -999em;
+	}
+	
+p {
+	font-size: 13px;
+	line-height: 20px;
+	margin: 5px 0 10px 0;
+	}
+		#footer p {
+			margin: 0;
+		}
+		#footer p span {
+			text-transform: uppercase;
+		}
+
+
+/* Headers -----------------------------------------*/
+
+h1, h2, h3, h4 {
+	font-weight: normal;
+	}
+	
+/* Main title */	
+h1 {
+	line-height: 0;
+}
+h1 a {
+	background: #989694 url('images/sprite.png') 0 0 no-repeat;
+	display: block;
+	text-indent: -900em;/**/
+	float: left;
+	width: 203px;
+	height: 28px;	
+	position: absolute;
+}
+h1 a:hover {
+	/*float: left;
+	background-position: -179px -27px;*/
+}
+h1 a:active,
+h1 a:focus {
+	/*background-position: -179px -54px;*/
+}
+
+	/* Large title */	
+	h2 {
+		font-size: 18px;
+		line-height: 18px;
+		margin: 30px 0 15px 0;
+		/*letter-spacing: 2px;
+		text-transform: uppercase;
+		color: #000;*/
+		text-shadow: 0 1px 0 #999;
+		}
+	#sidebar h2 {
+		font-size: 18px;
+		line-height: 18px;
+		margin: 6px 0 15px 0;
+		color: #000;
+		}
+
+			/* Medium title + Email address*/	
+			h3 {
+				font-size: 13px;
+				/*line-height: 18px;*/
+				color: #FFFFFF;
+				/**/margin: 6px 0 0px 0;
+				font-weight: bold;
+				}
+						/* Small title */
+						h4 {
+							font-size: 14px;
+							line-height: 14px;
+							}
+								h5 {
+									font-size: 12px;
+									line-height: 14px;
+									}
+									
+	
+/* Links -----------------------------------------*/
+
+a {
+	color: #FFF;
+	text-decoration: none;
+	}
+a:hover {
+	color: #FFF;
+	text-decoration: underline;
+	}
+	
+/* End Typography & Colors */
+
+
+
+/* Layout -----------------------------------------*/
+html {
+	/*height: 100%;		fullheight*/
+}
+body {
+	/*height: 100%;		fullheight*/
+	/*background: green;*/
+}
+#page {
+	/*background: pink;*/
+	/*min-height: 100%;		fullheight*/
+	/*overflow-x:hidden;	Needed to eliminate scrollbars*/
+	position: relative;
+	/*width: 93%;*/
+	margin: 0 auto;
+	width: 950px;
+	padding: 0 20px 0 20px;
+	/*z-index: 10;*/
+}
+	#header {/*----------------------------------------------------*/
+		/*background: green;*/
+		width: 940px;
+		height: 28px;
+		float: left;
+		padding: 64px 0 20px 0;
+		border-bottom: 1px #72706f solid;
+		/*position: relative;
+		padding: 0 18px 0 18px;*/
+	}
+	
+				/*#wrap {----------------------------------------------------*/
+					/*background: orange;*/
+					/*overflow: auto;					clears the float problem!*/
+					/*margin: 30px 0 0 0;
+					width: 940px;*/
+					/*padding: 0 0px 180px 0px;	footerheight!!!!!!!!!!*/
+					/*height: 416px;
+					position: relative;
+					padding: 0 18px 0 18px;
+				}*/
+			.narrowcolumn {/*----------------------------------------------------*/
+				/*background: #666;*/
+				/*float: left;
+				padding: 0 20px 0 0px;*/
+				/**/width: 940px;
+				/*height: 416px;*/
+				clear: left;
+				float: left;
+				padding: 0px 0;/**/
+			}
+			body.home .narrowcolumn {
+				padding: 0;
+			}
+			body.info .narrowcolumn {
+				width: 460px;
+			}
+			/*.widecolumn {
+				padding: 10px 0 20px 0;
+				margin: 5px 0 0 150px;
+				width: 450px;
+				}*/
+					
+			#sidebar {/*----------------------------------------------------*/
+				/*background: #333;*/
+				width: 220px;
+				/*height: 366px;*/
+				float: left;
+				margin: 0px 0 0 0;
+				/*padding: 20px 0 0 0;
+				overflow-y: auto;*/
+			}
+
+				#footer {/*----------------------------------------------------*/
+					/*background: green;
+					margin: 0 auto;
+					width: 940px;*/
+					height: 20px;
+				  position: relative;
+          top: 50px;
+					padding: 20px 0px 30px 0px;
+					border-top: 1px #72706f solid;
+					clear: both;
+					}
+					
+#videosml {
+	float: left;
+	}
+.slideshow {
+	width: 700px;
+	float: right;
+	margin-top: 0px;
+	}
+.slide p {
+	position: relative;
+	width: 700px;
+	padding: 10px 0 20px 9px;
+	border-bottom: 1px #72706f solid;
+	}
+.slide h3 {
+	width: 700px;
+	border-bottom: 1px #72706f solid;
+	}
+.slidez p {
+	position: relative;
+	top: -180px;
+	left: -241px;
+	width: 231px;
+	padding: 10px 0 20px 9px;
+	border-bottom: 1px #72706f solid;
+	}
+.slidew p {
+	position: relative;
+	top: 85px;
+	left: -241px;
+	width: 231px;
+	padding: 10px 0 20px 9px;
+	border-bottom: 1px #72706f solid;
+	}
+.slidem p {
+	position: relative;
+	top: -15px;
+	left: -241px;
+	width: 231px;
+	padding: 10px 0 20px 9px;
+	border-bottom: 1px #72706f solid;
+	}
+.sliden p {
+	position: relative;
+	top: 45px;
+	left: -241px;
+	width: 231px;
+	padding: 10px 0 20px 9px;
+	border-bottom: 1px #72706f solid;
+	}
+.slidel p {
+	position: relative;
+	top: -100px;
+	left: -241px;
+	width: 231px;
+	padding: 10px 0 20px 9px;
+	border-bottom: 1px #72706f solid;
+	}
+.slided p {
+	position: relative;
+	top: -25px;
+	left: -241px;
+	width: 231px;
+	padding: 10px 0 20px 9px;
+	border-bottom: 1px #72706f solid;
+	}
+.slide p {
+	position: relative;
+	top: 45px;
+	left: -241px;
+	width: 231px;
+	padding: 10px 0 20px 9px;
+	border-bottom: 1px #72706f solid;
+	}
+.slideo p {
+	position: relative;
+	top: -210px;
+	left: -241px;
+	width: 231px;
+	padding: 10px 0 20px 9px;
+	border-bottom: 1px #72706f solid;
+	}
+.slidej p {
+  position: relative;
+  padding: 10px 0 20px 9px;
+  top: -210px;
+	left: -241px;
+	width: 231px;
+	border-bottom: 1px #72706f solid;
+}
+body.ceen .slideshow img.port {
+	margin-left: 93px;
+	}
+body.falling .slideshow img.port {
+	margin-left: 117px;
+	}
+.aside {
+	width: 231px;
+	padding: 0 0 20px 1px;
+	border-bottom: 1px #72706f solid;
+	}
+.thumbs li {
+	float: left;
+	}
+.thumbs li img {
+	width: 70px;
+	margin: 7px 7px 0 0;
+	}
+li.clear {
+	clear:left;
+	}
+	
+/* End Structure */
+
+
+
+/* Lists -----------------------------------------*/
+
+ul.navbar {
+	/*background: red;*/
+	padding: 0 0 0 203px;
+	margin: 9px 0 0 0px;
+	/*width: 300px;*/
+	height: 19px;
+	float: left;
+	z-index: 0;
+	}
+	ul.navbar li {
+		float: left; /*cures the diagonal in ie*/
+		line-height: 0;
+		position: relative;
+		}
+	ul.navbar li a {
+		display: block;
+		text-indent: -900em;
+		background: #989694 url('images/sprite.png') no-repeat;
+		height: 19px;
+		margin-left: 30px;
+		}
+	/*ul.navbar li.current a {
+		opacity: 1;
+		}*/
+			ul.navbar li#work a {
+				width: 51px;
+				background-position: -0px -28px;
+				}
+			/*ul.nav li#portfolio a:hover,
+			ul.nav li.hot#portfolio a {
+				background-position: -179px -117px;
+				}
+			ul.nav li#portfolio a:active,
+			ul.nav li#portfolio a:focus,
+			ul.nav li.current#portfolio a {
+				background-position: -179px -117px;
+				}*/
+			ul.navbar li#info a {
+				width: 33px;
+				background-position: -51px -28px;
+				}
+				
+					ul.subnav {
+						margin: 12px 0 0 0;
+						/*width: 300px;
+						height: 19px;*/
+						float: left;
+						}
+						ul.subnav li {
+							float: left; /*cures the diagonal in ie*/
+							}
+						ul.subnav li a {
+							line-height: 19px;
+							margin-left: 20px;
+							color: #666;
+							}
+						ul.subnav li.current a {
+							line-height: 19px;
+							margin-left: 20px;
+							color: #FFF;
+							}
+			ul .subnav2 {
+				float: left;
+				clear: none;
+			}
+
+/* Begin Images */
+p img {
+	/*padding: 0;
+	max-width: 100%;
+	margin: 1px 1px 0 0;*/
+	}
+/*	Using 'class="alignright"' on an image will (who would've
+	thought?!) align the image to the right. And using 'class="centered',
+	will of course center the image. This is much better than using
+	align="center", being much more futureproof (and valid) */
+
+img.centered {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	}
+
+img.alignright {
+	/*padding: 4px;
+	margin: 0 0 2px 7px;*/
+	display: inline;
+	}
+
+img.alignleft {
+	/*padding: 4px;
+	margin: 5px 5px 0px 0;*/
+	display: inline;
+	}
+
+.alignright {
+	float: right;
+	}
+
+.alignleft {
+	float: left;
+	}
+/* End Images */

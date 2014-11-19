@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Demo</title>
+<link rel="stylesheet" type="text/css" href="css/demo.css" />
+<style type="text/css">
+
+div#wn	{ 
+	position:relative;
+	width:640px; height:426px;
+	overflow:hidden;
+	border:1px solid #ddd;
+	}
+
+div#wn table {
+	border-spacing:0;
+    border-collapse:collapse;
+	}
+	
+div#wn td {
+	padding: 0px;
+	}
+</style>
+<script src="js/dw_paus_scroller.js" type="text/javascript"></script>
+<script type="text/javascript">
+
+if ( DYN_WEB.Scroll_Div.isSupported() ) {
+    
+    DYN_WEB.Event.add( window, 'load', function() {
+		var wndo = new DYN_WEB.Scroll_Div('wn', 'lyr');
+		
+		// see info online at http://www.dyn-web.com/code/scrollers/pausing/documentation.php
+		var options = {
+			axis:'h',
+			bRepeat:true,
+			repeatId:'rpt',
+			dur:600, // duration of glide-scroll
+			bPauseResume:true,
+			distance: 640, // distance of glide-scroll
+			pauseDelay: 3000, 
+			resumeDelay: 300,
+			startDelay: 1000
+			};
+		
+		wndo.makePauseAuto( options );
+		
+	});
+}
+
+</script>
+</head>
+<body>
+
+<div id="wn">
+    <div id="lyr" class="content">
+    <table>
+        <tr>
+            <td><img src="images/auto(1).jpg" width="640" height="426" alt="" /></td>
+        	<td><img src="images/auto(2).jpg" width="640" height="426" alt="" /></td>
+        	<td><img src="images/auto(3).jpg" width="640" height="426" alt="" /></td>
+        	<td><img src="images/auto(4).jpg" width="640" height="426" alt="" /></td>
+            <!-- repeat first item(s)-->
+            <td id="rpt"><img src="images/auto(1).jpg" width="640" height="426" alt="" /></td>
+            <!-- if width = 2 images, repeat at least first 2 -->
+            <td><img src="images/auto(2).jpg" width="640" height="426" alt="" /></td>
+        </tr>
+    </table>
+    </div>
+</div>  <!-- end wn div -->
+
+
+</body>
+</html>
