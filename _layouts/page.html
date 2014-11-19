@@ -1,0 +1,195 @@
+---
+layout: default
+---
+<body class="ceen">
+	<div id="page">
+		<div id="header">
+			<h1><a href="index.html">Wack Jigley</a></h1>
+
+			<div class="description">
+				Portfolio of London Based Artist Jack Wrigley
+			</div>
+
+			<ul class="navbar">
+				<li class="current" id="work">
+					<a href="society.html" title="Work">Work</a>
+				</li>
+
+				<li id="info">
+					<a href="info.html" title="Info">Info</a>
+				</li>
+			</ul><!-- navbar -->
+		</div><!-- header -->
+
+		<div class="narrowcolumn" id="content">
+			<div id="Marionette">
+				<div style="float:right;position:relative;top: -20px">
+					<h2>{{ page.title }}, <span style=
+					"font-size: 0.7em">{{ page.subtitle }}</span></h2>
+					<!--<p>Photographic Installation</p>-->
+
+					<ul class="thumbs" style="width:700px">
+            
+          {% if page.img1 %}  
+						<li>
+							<a href="#" title=""><img alt=
+							"" src=
+							"{{ page.img1 }}"></a>
+						</li>
+            {% endif %}
+            
+            {% if page.img2 %}  
+						<li>
+							<a href="#" title=""><img alt=
+							"" src=
+							"{{ page.img2 }}"></a>
+						</li>
+            {% endif %}
+            
+            {% if page.img3 %}  
+						<li>
+							<a href="#" title=""><img alt=
+							"" src=
+							"{{ page.img3 }}"></a>
+						</li>
+            {% endif %}
+            
+            {% if page.img4 %}  
+						<li>
+							<a href="#" title=""><img alt=
+							"" src=
+							"{{ page.img4 }}"></a>
+						</li>
+            {% endif %}
+            
+            {% if page.img5 %}  
+						<li>
+							<a href="#" title=""><img alt=
+							"" src=
+							"{{ page.img5 }}"></a>
+						</li>
+            {% endif %}
+            
+            {% if page.img6 %}  
+						<li>
+							<a href="#" title=""><img alt=
+							"" src=
+							"{{ page.img6 }}"></a>
+						</li>
+            {% endif %}
+            
+            {% if page.img7 %}  
+						<li>
+							<a href="#" title=""><img alt=
+							"" src=
+							"{{ page.img7 }}"></a>
+						</li>
+            {% endif %}
+            
+            {% if page.img8 %}  
+						<li>
+							<a href="#" title=""><img alt=
+							"" src=
+							"{{ page.img8 }}"></a>
+						</li>
+            {% endif %}
+            
+            {% if page.img9 %}  
+						<li>
+							<a href="#" title=""><img alt=
+							"" src=
+							"{{ page.img9 }}"></a>
+						</li>
+            {% endif %}
+            
+            {% if page.img10 %}  
+						<li>
+							<a href="#" title=""><img alt=
+							"" src=
+							"{{ page.img10 }}"></a>
+						</li>
+            {% endif %}
+
+            
+					</ul>
+				</div>
+			</div>
+
+ {% include nav.html %}
+
+<div class="slideshow" style="float:right;height:700px;width:700px">
+  
+  {% if page.img1 %}
+				<div class="slide">
+					<img alt="" src="{{ page.img1 }}" style="max-height:700px; max-width:700px;display:block;margin:auto">
+					<h3>{{ page.caption1 }}</h3>
+				</div>
+  {% endif %}
+  
+  {% if page.img2 %}
+				<div class="slide">
+					<img alt="" src="{{ page.img2 }}" style="max-height:700px; max-width:700px;display:block;margin:auto">
+					<h3>{{ page.caption2 }}</h3>
+				</div>
+  {% endif %}
+  
+  {% if page.img3 %}
+				<div class="slide">
+					<img alt="" src="{{ page.img3 }}" style="max-height:700px; max-width:700px;display:block;margin:auto">
+					<h3>{{ page.caption3 }}</h3>
+				</div>
+  {% endif %}
+  
+  {% if page.img4 %}
+				<div class="slide">
+					<img alt="" src="{{ page.img4 }}" style="max-height:700px; max-width:700px;display:block;margin:auto">
+					<h3>{{ page.caption4 }}</h3>
+				</div>
+  {% endif %}
+  
+  {% if page.img5 %}
+				<div class="slide">
+					<img alt="" src="{{ page.img5 }}" style="max-height:700px; max-width:700px;display:block;margin:auto">
+					<h3>{{ page.caption5 }}</h3>
+				</div>
+  {% endif %}
+  
+  {% if page.img6 %}
+				<div class="slide">
+					<img alt="" src="{{ page.img6 }}" style="max-height:700px; max-width:700px;display:block;margin:auto">
+					<h3>{{ page.caption7 }}</h3>
+				</div>
+  {% endif %}
+  
+  {% if page.img7 %}
+				<div class="slide">
+					<img alt="" src="{{ page.img7 }}" style="max-height:700px; max-width:700px;display:block;margin:auto">
+					<h3>{{ page.caption7 }}</h3>
+				</div>
+  {% endif %}
+  
+  {% if page.img8 %}
+				<div class="slide">
+					<img alt="" src="{{ page.img8 }}" style="max-height:700px; max-width:700px;display:block;margin:auto">
+					<h3>{{ page.caption8 }}</h3>
+				</div>
+  {% endif %}
+  
+  {% if page.img9 %}
+				<div class="slide">
+					<img alt="" src="{{ page.img9 }}" style="max-height:700px; max-width:700px;display:block;margin:auto">
+					<h3>{{ page.caption9 }}</h3>
+				</div>
+  {% endif %}
+  
+  {% if page.img10 %}
+				<div class="slide">
+					<img alt="" src="{{ page.img10 }}" style="max-height:700px; max-width:700px;display:block;margin:auto">
+					<h3>{{ page.caption10 }}</h3>
+				</div>
+  {% endif %}
+	
+			</div><!--slideshowwrap-->
+		</div><!-- content -->
+
+		
